@@ -570,8 +570,6 @@ class FormatConverter(QtCore.QRunnable):
                 duration = 5000 #5 seconds
                 tray = QSystemTrayIcon(system_tray_icon)
                 tray.show()
-                #Catch FileNotFoundError here and make  ffmpeg input only 1 file instead of 2
-                #for instances where the user picks a stream where the video and audio are already merged
                 try:
                     shutil.move(self.file_name[:-7] + "(1).aac", config.get("audio_path", "audio_save_path"))
                 except FileNotFoundError:
