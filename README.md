@@ -5,5 +5,5 @@ ConverTube can download and convert up to 5 videos at the same time. Made with t
 
 # Attention
 ***Downloading multiple videos at the same time may slow down your internet connection.***
-***Also, converting up to 5 videos at once may cause your computer to slow down. This application is written in Python which is not a fast language, so conversion time won't be the fastest.***
+***Also, converting up to 5 videos at once may cause your computer to slow down. This app is written in Python which naturally has a slow runtime speed. So conversion time won't be the fastest.***
 ***You will need ffmpeg installed to your device.***
