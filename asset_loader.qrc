@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>assets/ConverTube_Logo.png</file>
+    <file>assets/minimize_button.svg</file>
+    <file>assets/info.svg</file>
+    <file>assets/download_button.svg</file>
+    <file>assets/maximize_button.svg</file>
+    <file>assets/x.svg</file>
+    <file>assets/folder.svg</file>
+    <file>assets/alert-octagon.svg</file>
+    <file>assets/stop_button.svg</file>
+    <file>assets/save_text.svg</file>
+    <file>assets/exit.png</file>
+    <file>assets/settings_icon.svg</file>
+    <file>assets/video_save_location_text.svg</file>
+    <file>assets/minimize_button.svg</file>
+    <file>assets/video_save_location_text.png</file>
+    <file>assets/URL_label.svg</file>
+    <file>assets/URL_label.png</file>
+    <file>assets/start_button.svg</file>
+    <file>assets/maximize_button.svg</file>
+    <file>assets/exit.svg</file>
+    <file>assets/start_button.png</file>
+    <file>assets/save_text.png</file>
+    <file>assets/folder.svg</file>
+    <file>assets/stop_button.svg</file>
+    <file>assets/CT_app_icon.ico</file>
+    <file>assets/minimize_button.svg</file>
+    <file>assets/minimize_button.png</file>
+    <file>assets/maximize_button.png</file>
+    <file>assets/minimize_button.svg</file>
+    <file>assets/hamburger_button.svg</file>
+    <file>assets/hamburger_button.png</file>
+    <file>assets/audio_save_location_text.png</file>
+    <file>assets/audio_save_location_text.svg</file>
+  </qresource>
+</RCC>

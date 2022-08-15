@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Thumbnail_Preview_Window</class>
+ <widget class="QMainWindow" name="Thumbnail_Preview_Window">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>528</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="main_frame">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="toolbar">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>2</y>
+         <width>521</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: qlineargradient(spread:pad, x1:0.485, y1:0.415045, x2:0.480294, y2:0.932, stop:0 rgba(61, 255, 232, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item alignment="Qt::AlignRight">
+         <widget class="QPushButton" name="exit_button">
+          <property name="minimumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="asset_loader.qrc">
+            <normaloff>:/icons/assets/x.svg</normaloff>:/icons/assets/x.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QFrame" name="central_frame">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>58</y>
+         <width>521</width>
+         <height>341</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="thumbnail_preview">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QComboBox" name="format_selector">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>400</y>
+         <width>87</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>mp4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>aac</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>flac</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>aiff</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>m4a</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wav</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mov</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wmv</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wma</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mp3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>flv</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>avi</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>mkv</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="download_button">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>430</y>
+         <width>84</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="asset_loader.qrc">
+         <normaloff>:/icons/assets/download_button.svg</normaloff>:/icons/assets/download_button.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>125</width>
+         <height>125</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="resolution_selector">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>400</y>
+         <width>87</width>
+         <height>32</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="asset_loader.qrc"/>
+ </resources>
+ <connections/>
+</ui>
