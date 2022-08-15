@@ -1,6 +1,6 @@
 ![ConverTube Logo](https://github.com/sketchyboi14/ConverTube/blob/master/assets/ConverTube_Logo.png)
 
-ConverTube can download and convert up to 5 videos at the same time. Made with the PyQT GUI toolkit with multithreading to allow for the simultaneous downloads and converting. Must have Python 3 installed to your device.
+ConverTube can download and convert up to 5 videos at the same time. Made with the PyQT GUI toolkit with multithreading to allow for simultaneous downloading and converting. Must have Python 3 installed to your device.
 
 
 # Attention
