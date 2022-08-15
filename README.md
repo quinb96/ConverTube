@@ -2,6 +2,8 @@
 
 ConverTube can download and convert up to 5 videos at the same time. Made with the PyQT GUI toolkit with multithreading to allow for simultaneous downloading and converting. Must have Python 3 installed to your device.
 
+*Releasing a setup.py script later.*
+
 
 # Attention
 ***Downloading multiple videos at the same time may slow down your internet connection.***
