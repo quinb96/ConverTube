@@ -5,6 +5,8 @@ To install the dependencies, open your terminal and cd to the root of the projec
 
 *Releasing a setup.py script later.*
 
+![Main Window](https://github.com/sketchyboi14/ConverTube/blob/master/Screenshots/Main%20Window.png)
+
 
 # Attention
 ***Downloading multiple videos at the same time may slow down your internet connection.***
