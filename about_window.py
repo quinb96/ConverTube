@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'about_windowaJwyQW.ui'
+## Form generated from reading UI file 'about_windowVzgqRP.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.15.3
+## Created by: Qt User Interface Compiler version 5.15.5
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from PySide2.QtCore import *  # type: ignore
+from PySide2.QtGui import *  # type: ignore
+from PySide2.QtWidgets import *  # type: ignore
 
 import asset_loader
 
@@ -78,11 +78,11 @@ class Ui_About_Window(object):
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.gridLayout = QGridLayout(self.frame_3)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.gridLayout.setContentsMargins(0, 20, 0, 20)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.label_2 = QLabel(self.frame_3)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setMinimumSize(QSize(500, 200))
-        self.label_2.setMaximumSize(QSize(500, 200))
+        self.label_2.setMinimumSize(QSize(700, 200))
+        self.label_2.setMaximumSize(QSize(700, 200))
         font = QFont()
         font.setPointSize(5)
         self.label_2.setFont(font)
@@ -92,16 +92,16 @@ class Ui_About_Window(object):
 
         self.gridLayout.addWidget(self.label_2, 2, 0, 1, 1)
 
-        self.label_3 = QLabel(self.frame_3)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setMinimumSize(QSize(0, 0))
-        self.label_3.setMaximumSize(QSize(16777215, 100))
+        self.OK_button = QPushButton(self.frame_3)
+        self.OK_button.setObjectName(u"OK_button")
+        self.OK_button.setMinimumSize(QSize(50, 0))
+        self.OK_button.setMaximumSize(QSize(50, 16777215))
         font1 = QFont()
         font1.setBold(True)
         font1.setWeight(75)
-        self.label_3.setFont(font1)
+        self.OK_button.setFont(font1)
 
-        self.gridLayout.addWidget(self.label_3, 6, 0, 1, 1, Qt.AlignHCenter)
+        self.gridLayout.addWidget(self.OK_button, 7, 0, 1, 1, Qt.AlignHCenter)
 
         self.label = QLabel(self.frame_3)
         self.label.setObjectName(u"label")
@@ -109,35 +109,28 @@ class Ui_About_Window(object):
         self.label.setMaximumSize(QSize(16777215, 50))
         self.label.setFont(font1)
 
-        self.gridLayout.addWidget(self.label, 4, 0, 1, 1, Qt.AlignHCenter)
-
-        self.OK_button = QPushButton(self.frame_3)
-        self.OK_button.setObjectName(u"OK_button")
-        self.OK_button.setMinimumSize(QSize(50, 0))
-        self.OK_button.setMaximumSize(QSize(50, 16777215))
-        self.OK_button.setFont(font1)
-
-        self.gridLayout.addWidget(self.OK_button, 10, 0, 1, 1, Qt.AlignHCenter)
-
-        self.textBrowser = QTextBrowser(self.frame_3)
-        self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setMinimumSize(QSize(500, 40))
-        self.textBrowser.setMaximumSize(QSize(500, 40))
-        font2 = QFont()
-        font2.setBold(False)
-        font2.setWeight(50)
-        self.textBrowser.setFont(font2)
-        self.textBrowser.setLayoutDirection(Qt.LeftToRight)
-        self.textBrowser.setFrameShape(QFrame.NoFrame)
-        self.textBrowser.setFrameShadow(QFrame.Sunken)
-
-        self.gridLayout.addWidget(self.textBrowser, 7, 0, 1, 1)
+        self.gridLayout.addWidget(self.label, 3, 0, 1, 1, Qt.AlignHCenter)
 
         self.label_4 = QLabel(self.frame_3)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setFont(font1)
 
-        self.gridLayout.addWidget(self.label_4, 3, 0, 1, 1, Qt.AlignHCenter)
+        self.gridLayout.addWidget(self.label_4, 1, 0, 1, 1, Qt.AlignHCenter)
+
+        self.label_3 = QLabel(self.frame_3)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setMinimumSize(QSize(0, 0))
+        self.label_3.setMaximumSize(QSize(16777215, 100))
+        self.label_3.setFont(font1)
+
+        self.gridLayout.addWidget(self.label_3, 5, 0, 1, 1, Qt.AlignHCenter)
+
+        self.label_5 = QLabel(self.frame_3)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setAlignment(Qt.AlignCenter)
+        self.label_5.setOpenExternalLinks(True)
+
+        self.gridLayout.addWidget(self.label_5, 6, 0, 1, 1)
 
 
         self.verticalLayout.addWidget(self.frame_3)
@@ -154,18 +147,14 @@ class Ui_About_Window(object):
 
     def retranslateUi(self, About_Window):
         About_Window.setWindowTitle(QCoreApplication.translate("About_Window", u"Settings", None))
+        self.linkTemplate = "<a href={0}>{1}</a>"
         self.minimize_button.setText("")
         self.exit_button.setText("")
         self.label_2.setText("")
-        self.label_3.setText(QCoreApplication.translate("About_Window", u"A GUI YouTube video downloader and converter.", None))
-        self.label.setText(QCoreApplication.translate("About_Window", u"Made by Quin Brown", None))
         self.OK_button.setText(QCoreApplication.translate("About_Window", u"OK", None))
-        self.textBrowser.setHtml(QCoreApplication.translate("About_Window", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Report bugs here</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://www.youtube.com/watch?v=nDqsVSyb5TM\"><span style=\" font-weight:600; text-decoration: underline; color:#2980b9;\">https://github.com/sketchyboi14/ConverTube/issues</span></a></p></body></html>", None))
+        self.label.setText(QCoreApplication.translate("About_Window", u"Made by Quin Brown", None))
         self.label_4.setText(QCoreApplication.translate("About_Window", u"v1.0", None))
+        self.label_3.setText(QCoreApplication.translate("About_Window", u"A GUI YouTube video downloader and converter.", None))
+        self.label_5.setText(self.linkTemplate.format("https://github.com/sketchyboi14/ConverTube/issues", "Report Issues"))
     # retranslateUi
 
