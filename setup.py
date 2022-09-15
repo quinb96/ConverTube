@@ -12,9 +12,6 @@ def path_checker():
     print("Application is already installed.\nExiting setup script...")
 
 def unpack_files():
-    #Function will check if device is Windows.
-    #If it is, copy app files to ~/Program_Files(x86)
-    #Run this script in cmd as admin so that the script has access admin privileges access to the Programs Files (x86) folder
     if sys.platform == "linux" or sys.platform == "linux2":
         try:
             shutil.copytree("../ConverTube", os.path.expanduser("/home/" + os.environ["SUDO_USER"] + "/.local/ConverTube")) #Unpacking files
