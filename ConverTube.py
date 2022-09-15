@@ -124,10 +124,6 @@ class SplashLoader(QMainWindow):
                 #Do nothing
                 pass
 
-
-
-        #assignedEnvVar = shutil.move(os.environ["USERPROFILE"] + "\Program Files\ffmpeg\bin")
-
         elif progressBarValue < 99:
             QtCore.QTimer.singleShot(0, lambda: self.ui.status_text.setText("Initializing window..."))
         progressBarValue += 1
