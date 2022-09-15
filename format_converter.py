@@ -16,14 +16,12 @@ class FormatConverter(QtCore.QRunnable):
         self.file_name = file_name
 
     def run(self):
-        if self.format_selector == "mp4": #Still need to work on this
+        if self.format_selector == "mp4":
             if sys.platform == "linux" or sys.platform == "linux2":
                 config = ConfigParser()
                 config.read("video_save_path_config.cfg")
                 self.file_name = self.file_name
                 subprocess.call(["ffmpeg", "-i", self.file_name, "-q:v", "0", self.file_name[:-7] + "(2).mp4"])
-                #video_codec = ffmpeg.input(self.file_name)
-                #stream = ffmpeg.output(video_codec, self.file_name[:-4] + ".mkv").run()
                 os.remove(self.file_name[:-7] + "(1).mp4")
                 system_tray_icon = QIcon(u":/icons/assets/CT_app_icon.ico")
                 duration = 5000 #5 seconds
